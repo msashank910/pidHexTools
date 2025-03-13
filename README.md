@@ -1,6 +1,6 @@
-# pidOffsetToHex
+# pidHexTools 🔍🔢
 
-**pidOffsetToHex** is a lightweight C++ utility designed to extract ASLR (Address Space Layout Randomization) offsets for a running process in Linux. It reads the base address from `/proc/<pid>/maps` and can compute absolute addresses given a relative address from disassembly.
+**pidHexTools** is a lightweight C++ utility for working with process ASLR offsets and hexadecimal calculations. It retrieves base addresses for a running process in Linux and optionally computes absolute addresses. Additionally, if no command-line arguments are provided, it enters interactive hex calculator mode for basic hex arithmetic.
 
 ---
 
@@ -14,6 +14,7 @@
 ## 🛠 Features
 - **Extracts ASLR offsets:** Retrieves the base address of a process using its PID.
 - **Computes absolute addresses:** Optionally takes a second argument as a relative address and returns the absolute address.
+- **Interactive Hex Calculator Mode** – If run without arguments, enters an interactive mode for hexadecimal arithmetic.
 - **Command-line utility:** Simple to use via terminal commands.
 
 ---
@@ -22,8 +23,8 @@
 
 Clone the repository:
 
-    git clone https://github.com/yourusername/pidOffsetToHex.git
-    cd pidOffsetToHex
+    git clone https://github.com/yourusername/pidHexTools.git
+    cd pidHexTools
 
 🚀 Usage
 
@@ -33,17 +34,20 @@ Compile the program:
 
 Run via:
 
-    ./pidOffsetToHex <pid> [relative_hex_address]
+    ./pidHexTools <pid> [relative_hex_address]
+or
+
+    ./pidHexTools
 
 Examples:
 
 Extract the ASLR offset:
 
-    ./pidOffsetToHex 1234
+    ./pidHexTools 1234
 
 Get absolute address from a relative address:
 
-    ./pidOffsetToHex 1234 0x400
+    ./pidHexTools 1234 0x400
 
 🛡 License
 
