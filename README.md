@@ -12,10 +12,10 @@
 
 
 ## 🛠 Features
-- **Extracts ASLR offsets:** Retrieves the base address of a process using its PID.
-- **Computes absolute addresses:** Optionally takes a second argument as a relative address and returns the absolute address.
+- **Extracts ASLR offsets** – Retrieves the base address of a process using its PID.
+- **Computes absolute addresses** – Optionally takes a second argument as a relative address and returns the absolute address.
 - **Interactive Hex Calculator Mode** – If run without arguments, enters an interactive mode for hexadecimal arithmetic.
-- **Command-line utility:** Simple to use via terminal commands.
+- **Command-line utility** – Simple to use via terminal commands.
 
 ---
 
@@ -34,7 +34,7 @@ Compile the program:
 
 Run via:
 
-    ./pidHexTools <pid> [relative_hex_address]
+    sudo ./pidHexTools <pid> [relative_hex_address]
 or
 
     ./pidHexTools
@@ -43,11 +43,15 @@ Examples:
 
 Extract the ASLR offset:
 
-    ./pidHexTools 1234
+    sudo ./pidHexTools 1234
 
 Get absolute address from a relative address:
 
-    ./pidHexTools 1234 0x400
+    sudo ./pidHexTools 1234 0x400
+
+Enter hexadecimal calculator mode:
+
+    ./pidHexTools
 
 🛡 License
 
