@@ -2,7 +2,7 @@ CXX = g++
 CXXFLAGS = -std=c++20 -Wall -Wextra -O2
 
 TARGET = pidHexTools
-SRC = pidOffsetToHex.cpp
+SRC = pidHexTools.cpp
 
 all: $(TARGET)
 $(TARGET): $(SRC)
