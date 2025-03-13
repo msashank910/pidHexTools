@@ -47,7 +47,7 @@ Extract the ASLR offset:
 
 Get absolute address from a relative address:
 
-    sudo ./pidHexTools 1234 0x400
+    sudo ./pidHexTools 1234 5abc
 
 Enter hexadecimal calculator mode:
 
