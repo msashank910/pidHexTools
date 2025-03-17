@@ -38,7 +38,7 @@ Alternatively, compile manually with g++:
 
 ---
 
-## 🚀 Usage
+## 🖥 Usage
 General Syntax
 
     sudo ./pidHexTools <flags> [arguments]
@@ -79,7 +79,7 @@ or
 
 ---
 
-## 📌 Examples
+## Examples
 
 Extract the ASLR base address:
 
@@ -103,6 +103,6 @@ Display the help message:
 
 ---
 
-## 🛡 License
+## 📄  License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
