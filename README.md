@@ -24,7 +24,7 @@
 ## 📥 Installation  
 
 Clone the repository:  
-```sh
+
 git clone https://github.com/yourusername/pidHexTools.git
 cd pidHexTools
 
