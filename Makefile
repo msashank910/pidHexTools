@@ -1,5 +1,5 @@
 CXX = g++
-CXXFLAGS = -std=c++20 -Wall -Wextra -O2
+CXXFLAGS = -std=c++20 -Wall -Wextra -Werror -O2
 
 TARGET = pidHexTools
 SRC = pidHexTools.cpp
