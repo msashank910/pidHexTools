@@ -25,21 +25,23 @@
 
 Clone the repository:  
 
-git clone https://github.com/yourusername/pidHexTools.git
-cd pidHexTools
+    git clone https://github.com/yourusername/pidHexTools.git
+    d pidHexTools
 
 Compile the program using make:
 
-make
+    make
 
 Alternatively, compile manually with g++:
 
-g++ -std=c++20 -o pidHexTools pidHexTools.cpp
+    g++ -std=c++20 -o pidHexTools pidHexTools.cpp
 
-🚀 Usage
+---
+
+## 🚀 Usage
 General Syntax
 
-sudo ./pidHexTools <flags> [arguments]
+    sudo ./pidHexTools <flags> [arguments]
 
 Flags:
 
@@ -49,53 +51,58 @@ Flags:
     -f <FILE> → Searches for the base address of a file mapped in /proc/<pid>/maps.
     -o <OFFSET> → Computes the absolute address from a relative hex offset.
 
-Modes of Operation
-1️⃣ Hexadecimal Calculator Mode
+### Modes of Operation
+
+#### 1️⃣ Hexadecimal Calculator Mode
 
 Runs with -c and allows basic hex arithmetic.
 
-./pidHexTools -c
+    ./pidHexTools -c
 
-2️⃣ ASLR Address Resolution Mode
+#### 2️⃣ ASLR Address Resolution Mode
 
 Retrieves the ASLR base address of a running process and optionally computes absolute addresses.
 
-sudo ./pidHexTools -p <PID>
+    sudo ./pidHexTools -p <PID>
 
 or
 
-sudo ./pidHexTools -f <FILEPATH>
+    sudo ./pidHexTools -f <FILEPATH>
 
 Optional relative hex offset calculation:
 
-sudo ./pidHexTools -p <PID> -o 0x5abc
+    sudo ./pidHexTools -p <PID> -o 0x5abc
 
 or
 
-sudo ./pidHexTools -f /usr/lib/libexample.so -o 0x2000
+    sudo ./pidHexTools -f /usr/lib/libexample.so -o 0x2000
 
-📌 Examples
+---
+
+## 📌 Examples
 
 Extract the ASLR base address:
 
-sudo ./pidHexTools -p 1234
+    sudo ./pidHexTools -p 1234
 
 or
 
-sudo ./pidHexTools -f ./libexample.so
+    sudo ./pidHexTools -f ./libexample.so
 
 Compute an absolute address from a relative one:
 
-sudo ./pidHexTools -p 1234 -o 0x1000
+    sudo ./pidHexTools -p 1234 -o 0x1000
 
 Start hexadecimal calculator mode:
 
-./pidHexTools -c
+    ./pidHexTools -c
 
 Display the help message:
 
-./pidHexTools -h
+    ./pidHexTools -h
 
-🛡 License
+---
+
+## 🛡 License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
