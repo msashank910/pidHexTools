@@ -109,11 +109,11 @@ void hexCalculator() {
 			res -= parseStream();
 		}
 		else if(s == "d" || s == "dec") {
-			convertToHex(true);
+			convertToHex(false);
 			continue;
 		}
 		else if(s == "h" || s == "hex") {
-			convertToHex(false);
+			convertToHex(true);
 			continue;
 		}
 		else if(s == "c" || s == "clear") {
